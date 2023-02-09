@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="16dp"
+    android:elevation="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/chess_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="parent"
+            android:src="@drawable/baseline_10k_24"
+            tools:ignore="MissingConstraints" />
+        <TextView
+            android:id="@+id/chess_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/chess_image"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="asdfghjk"/>
+        <TextView
+            android:id="@+id/chess_age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="49"
+            app:layout_constraintTop_toBottomOf="@id/chess_name"
+            app:layout_constraintStart_toStartOf="@id/chess_name"
+            />
+        <ImageView
+            android:id="@+id/chess_pawnImage"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            app:layout_constraintTop_toBottomOf="@id/chess_age"
+            app:layout_constraintStart_toStartOf="@id/chess_age"
+            android:src="@drawable/pawn"
+            tools:ignore="MissingConstraints" />
+        <TextView
+            android:id="@+id/chess_pawnText"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            app:layout_constraintTop_toBottomOf="@id/chess_pawnImage"
+            app:layout_constraintStart_toStartOf="@id/chess_pawnImage"
+            android:text="Pawn"
+            />
+        <ImageView
+            android:id="@+id/chess_knightImage"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            app:layout_constraintTop_toBottomOf="@id/chess_pawnText"
+            app:layout_constraintStart_toStartOf="parent"
+            android:src="@drawable/knight"
+            tools:ignore="MissingConstraints" />
+        <TextView
+            android:id="@+id/chess_knightText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/chess_knightImage"
+            app:layout_constraintStart_toStartOf="@id/chess_knightImage"
+            android:text="Knight"
+            />
+        <ImageView
+            android:id="@+id/chess_bishopImage"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            app:layout_constraintTop_toBottomOf="@id/chess_knightText"
+            app:layout_constraintStart_toStartOf="parent"
+            android:src="@drawable/bishop"
+            tools:ignore="MissingConstraints" />
+        <TextView
+            android:id="@+id/chess_bishopText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/chess_bishopImage"
+            app:layout_constraintStart_toStartOf="@id/chess_bishopImage"
+            android:text="Bishop"
+            />
+        <ImageView
+            android:id="@+id/chess_rookImage"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            app:layout_constraintTop_toBottomOf="@id/chess_bishopText"
+            app:layout_constraintStart_toStartOf="parent"
+            android:src="@drawable/rook2"
+            tools:ignore="MissingConstraints" />
+        <TextView
+            android:id="@+id/chess_rookText"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            app:layout_constraintTop_toBottomOf="@id/chess_rookImage"
+            app:layout_constraintStart_toStartOf="@id/chess_rookImage"
+            android:text="Rook"
+            />
+        <ImageView
+            android:id="@+id/chess_queenImage"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            app:layout_constraintTop_toBottomOf="@id/chess_rookText"
+            app:layout_constraintStart_toStartOf="parent"
+            android:src="@drawable/queen"
+            tools:ignore="MissingConstraints" />
+        <TextView
+            android:id="@+id/chess_queenText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/chess_queenImage"
+            app:layout_constraintStart_toStartOf="@id/chess_queenImage"
+            android:text="Queen"
+            />
+        <ImageView
+            android:id="@+id/chess_kingImage"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            app:layout_constraintTop_toBottomOf="@id/chess_queenText"
+            app:layout_constraintStart_toStartOf="parent"
+            android:src="@drawable/king"
+            tools:ignore="MissingConstraints" />
+        <TextView
+            android:id="@+id/chess_kingText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/chess_kingImage"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="King"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>
