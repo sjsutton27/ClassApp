@@ -54,9 +54,7 @@ class ChessAdapter (private val chess: List<Chess>) :
 
         holder.chessName.text = chess.name
         holder.chessAge.text = chess.age.toString()
-        holder.chessPiece.text = chess.chessPiece
-        holder.chessColor.text = chess.chessColor
-        holder.chessValue.text = chess.chessValue.toString()
+
     }
 
         inner class ChessViewHolder(
@@ -66,9 +64,7 @@ class ChessAdapter (private val chess: List<Chess>) :
             val chessImage: ImageView = itemView.findViewById(R.id.chess_image)
             val chessName: TextView = itemView.findViewById(R.id.chess_name)
             val chessAge: TextView = itemView.findViewById(R.id.chess_age)
-            val chessPiece: TextView = itemView.findViewById(R.id.chess_piece)
-            val chessColor: TextView = itemView.findViewById(R.id.chess_color)
-            val chessValue: TextView = itemView.findViewById(R.id.chess_value)
+
             init {
                 itemView.setOnClickListener {
                     onItemClick(adapterPosition)

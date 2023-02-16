@@ -1,12 +1,10 @@
 package com.example.classdemo3.ui
 
-
-import android.annotation.SuppressLint
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.classdemo3.Chess
@@ -16,7 +14,6 @@ import kotlin.random.Random
 
 class ChessFragment : Fragment() {
 
-    @SuppressLint("MissingInflatedId")
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -27,6 +24,7 @@ class ChessFragment : Fragment() {
         val recyclerView = view.findViewById<RecyclerView>(R.id.chess_recycler_view)
 
         recyclerView.layoutManager = LinearLayoutManager(requireContext())
+
 
         val chess = mutableListOf<Chess>()
         val chessPiece = mutableListOf("Pawn","Rook","Knight","Bishop","King","Queen")
@@ -39,8 +37,8 @@ class ChessFragment : Fragment() {
             "Interdimensional Cable",
             "Random Dimension"
         )
-        val nameMods = mutableListOf("Pickle", "", "Smart", "Fused", "Big Arm")
-        val characterNames = mutableListOf("Rick", "Morty", "Summer", "Jerry", "Beth")
+        val nameMods = mutableListOf("Speed", "", "Slow", "Time", "Blunder")
+        val characterNames = mutableListOf("Seth", "Jp", "Sarah", "Scruffy", "Lacy")
 
         for (i in 0..30) {
             chess.add(
@@ -73,7 +71,7 @@ class ChessFragment : Fragment() {
     ) = Chess(
         name = name,
         age = Random.nextInt(10, 99),
-        image = "https://en.wikipedia.org/wiki/Pawn_%28chess%29#/media/File:Chess_piece_-_White_pawn.JPG",
+        image = "https://cdn4.iconfinder.com/data/icons/chess-game-funny-colour/32/chess_game_funy_colour_ok_20-512.png",
         gender = gender,
         universe = location,
         id = id,
@@ -82,7 +80,4 @@ class ChessFragment : Fragment() {
         chessColor = chessColor,
         chessValue = chessValue
     )
-
-
-
 }

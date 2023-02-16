@@ -6,8 +6,29 @@
     tools:context=".ui.ChessDetailFragment">
 
     <TextView
-        android:id="@+id/chess_name"
+        android:id="@+id/chess_universe"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
+    <TextView
+        android:id="@+id/chess_piece"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        tools:ignore="MissingConstraints" />
+    <TextView
+        android:id="@+id/chess_value"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        tools:ignore="MissingConstraints" />
+    <TextView
+        android:id="@+id/chess_color"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="45dp"
+        tools:ignore="MissingConstraints" />
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
