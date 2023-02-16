@@ -47,6 +47,7 @@ class ChessAdapter (private val chess: List<Chess>) :
 
     override fun onBindViewHolder(holder: ChessViewHolder, position: Int) {
         val chess = chess[position]
+
         Glide
             .with(holder.itemView.context)
             .load(chess.image)

@@ -12,7 +12,7 @@ import com.example.classdemo3.ChessAdapter
 import com.example.classdemo3.R
 import kotlin.random.Random
 
-class ChessFragment : Fragment() {
+class ChessFragmentList : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -20,11 +20,10 @@ class ChessFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        val view = inflater.inflate(R.layout.fragment_chess, container, false)
+        val view = inflater.inflate(R.layout.fragment_chess_list, container, false)
         val recyclerView = view.findViewById<RecyclerView>(R.id.chess_recycler_view)
 
         recyclerView.layoutManager = LinearLayoutManager(requireContext())
-
 
         val chess = mutableListOf<Chess>()
         val chessPiece = mutableListOf("Pawn","Rook","Knight","Bishop","King","Queen")
@@ -79,5 +78,6 @@ class ChessFragment : Fragment() {
         chessPiece = chessPiece,
         chessColor = chessColor,
         chessValue = chessValue
+
     )
 }

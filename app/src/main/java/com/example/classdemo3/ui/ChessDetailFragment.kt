@@ -5,8 +5,10 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.fragment.app.Fragment
+import com.bumptech.glide.Glide
 import com.example.classdemo3.R
 
 class ChessDetailFragment : Fragment() {
@@ -28,10 +30,13 @@ class ChessDetailFragment : Fragment() {
             val chessPiece = requireArguments().getString("chessPiece")
             val chessColor = requireArguments().getString("chessColor")
             val chessValue = requireArguments().getInt("chessValue")
+
             view.findViewById<TextView>(R.id.chess_universe).text = universe
             view.findViewById<TextView>(R.id.chess_piece).text = chessPiece
             view.findViewById<TextView>(R.id.chess_value).text = chessValue.toString()
             view.findViewById<TextView>(R.id.chess_color).text = chessColor
+
+
         }
 
         return view

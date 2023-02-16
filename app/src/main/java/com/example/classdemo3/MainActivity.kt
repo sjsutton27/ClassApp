@@ -3,8 +3,7 @@ package com.example.classdemo3
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.commit
-import com.example.classdemo3.ui.ChessDetailFragment
-import com.example.classdemo3.ui.ChessFragment
+import com.example.classdemo3.ui.ChessFragmentList
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -13,7 +12,7 @@ class MainActivity : AppCompatActivity() {
 
         supportFragmentManager.commit {
             setReorderingAllowed(true)
-            add(R.id.fragment_container_view, ChessFragment())
+            add(R.id.fragment_container_view, ChessFragmentList())
         }
     }
 }
