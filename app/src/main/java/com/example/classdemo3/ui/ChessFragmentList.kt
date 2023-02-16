@@ -36,7 +36,7 @@ class ChessFragmentList : Fragment() {
             "Interdimensional Cable",
             "Random Dimension"
         )
-        val nameMods = mutableListOf("Speed", "", "Slow", "Time", "Blunder")
+        val nameMods = mutableListOf("Speed Chess", "", "Bullet Chess", "Timed Chess", "Blunder Chess")
         val characterNames = mutableListOf("Seth", "Jp", "Sarah", "Scruffy", "Lacy")
 
         for (i in 0..30) {
