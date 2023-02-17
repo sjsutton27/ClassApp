@@ -30,7 +30,8 @@ class ChessDetailFragment : Fragment() {
             val chessPiece = requireArguments().getString("chessPiece")
             val chessColor = requireArguments().getString("chessColor")
             val chessValue = requireArguments().getInt("chessValue")
-
+            val imageView = view.findViewById<ImageView>(R.id.chess_image)
+            Glide.with(this).load(image).into(imageView)
             view.findViewById<TextView>(R.id.chess_universe).text = universe
             view.findViewById<TextView>(R.id.chess_piece).text = chessPiece
             view.findViewById<TextView>(R.id.chess_value).text = chessValue.toString()
